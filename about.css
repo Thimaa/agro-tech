@@ -1,0 +1,482 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+  color:#111;
+}
+
+/* HEADER */
+header{
+  width:100%;
+  background:#111;
+  padding:15px 8%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:28px;
+  font-weight:bold;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#ff9800;
+}
+
+/* LANGUAGE BUTTON */
+.lang-btn{
+  padding:10px 18px;
+  border:none;
+  background:#ff9800;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* ABOUT SECTION */
+#about{
+  padding:90px 10%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-title h2{
+  font-size:42px;
+}
+
+.about{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+.about img{
+  width:500px;
+  max-width:100%;
+  border-radius:20px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-content{
+  flex:1;
+}
+
+.about-content h3{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.about-content p{
+  font-size:17px;
+  line-height:1.9;
+  color:#555;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 30px;
+
+  background:#ff9800;
+  color:white;
+
+  text-decoration:none;
+
+  border-radius:8px;
+
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#e68900;
+  transform:translateY(-3px);
+}
+
+/* MISSION & VISION */
+.mission-vision{
+  padding:80px 10%;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.mv-card{
+  background:white;
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+  transition:0.4s;
+}
+
+.mv-card:hover{
+  transform:translateY(-10px);
+}
+
+.mv-icon{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.mv-card h2{
+  margin-bottom:20px;
+}
+
+.mv-card p{
+  color:#666;
+  line-height:1.8;
+}
+
+/* DIRECTORS */
+.directors{
+  padding:80px 10%;
+  background:#fff;
+}
+
+.director-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.director-card{
+  background:#f9f9f9;
+  padding:35px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+  transition:0.4s;
+}
+
+.director-card:hover{
+  transform:translateY(-10px);
+}
+
+.director-card img{
+  width:130px;
+  height:130px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:5px solid #ff9800;
+
+  margin-bottom:20px;
+}
+
+.director-card h3{
+  font-size:24px;
+  margin-bottom:8px;
+}
+
+.director-card span{
+  color:#ff9800;
+  font-weight:bold;
+  display:block;
+  margin-bottom:15px;
+}
+
+.director-card p{
+  color:#666;
+  line-height:1.7;
+}
+
+/* FOOTER */
+.footer{
+  background:#111;
+  color:white;
+  padding:60px 10% 20px;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+}
+
+.footer-box h2,
+.footer-box h3{
+  margin-bottom:20px;
+}
+
+.footer-box p,
+.footer-box li{
+  color:#ccc;
+  line-height:1.8;
+}
+
+.footer-box ul{
+  list-style:none;
+}
+
+.footer-box ul li{
+  margin-bottom:10px;
+}
+
+.footer-box ul li a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+.footer-box ul li a:hover{
+  color:#ff9800;
+}
+
+.social-icons{
+  margin-top:15px;
+}
+
+.social-icons a{
+  display:inline-block;
+  margin-right:10px;
+  color:white;
+  text-decoration:none;
+}
+
+.social-icons a:hover{
+  color:#ff9800;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:50px;
+  padding-top:20px;
+  border-top:1px solid #333;
+}
+
+header{
+  background:#111;
+  color:white;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+}
+
+/* Navigation */
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#ff9800;
+}
+
+/* Right Buttons */
+.header-actions{
+  display:flex;
+  gap:12px;
+}
+
+/* Modern Buttons */
+.lang-btn,
+.login-btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 18px;
+
+  border:none;
+  border-radius:50px;
+
+  cursor:pointer;
+
+  font-size:15px;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+/* Language Button */
+.lang-btn{
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+  color:white;
+}
+
+.lang-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,114,255,.4);
+}
+
+/* Login Button */
+.login-btn{
+  background:linear-gradient(135deg,#ff9800,#ff5722);
+  color:white;
+}
+
+.login-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(255,87,34,.4);
+}
+
+/* Menu Icon */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+  color:white;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+  .logo{
+    margin-left:45px;
+    font-size:24px;
+  }
+
+  nav{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#111;
+    padding:20px 0;
+    text-align:center;
+  }
+
+  nav.show{
+    display:flex;
+  }
+
+  nav a{
+    padding:12px;
+    border-bottom:1px solid #333;
+  }
+
+  .header-actions{
+    gap:8px;
+  }
+
+  /* Hide text on mobile */
+  .lang-btn span,
+  .login-btn span{
+    display:none;
+  }
+
+  .lang-btn,
+  .login-btn{
+    width:42px;
+    height:42px;
+    padding:0;
+    justify-content:center;
+    border-radius:50%;
+  }
+}
+/* Header */
+header{
+    background:#111;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+/* Right Side Buttons */
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .menu-toggle{
+        position:absolute;
+        left:15px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    .header-actions{
+        position:absolute;
+        right:15px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    .lang-btn span,
+    .login-btn span{
+        display:none;
+    }
+
+    .lang-btn,
+    .login-btn{
+        width:40px;
+        height:40px;
+        padding:0;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        border-radius:50%;
+    }
+
+    .logo{
+        margin:auto;
+    }
+}
