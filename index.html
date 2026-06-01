@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolarTech Energy</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <!-- Mobile Menu -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo" id="logo">SolarTech</div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="index.html" id="nav-home">Home</a>
+    <a href="about.html" id="nav-about">About</a>
+    <a href="services.html" id="nav-services">Services</a>
+    <a href="projects.html" id="nav-projects">Projects</a>
+    <a href="contact.html" id="nav-contact">Contact</a>
+  </nav>
+
+  <!-- Right Buttons -->
+  <div class="header-actions">
+
+    <button class="lang-btn" id="lang-btn" onclick="toggleLanguage()">
+      <i class="fa-solid fa-globe"></i> <span>සිංහල</span>
+    </button>
+
+    <button class="login-btn">
+      <i class="fa-solid fa-user"></i>
+      <span>Login</span>
+    </button>
+
+  </div>
+
+</header>
+<div class="admin-panel" id="adminPanel">
+
+  <h3>Admin Login</h3>
+
+  <input type="text" placeholder="Username">
+
+  <input type="password" placeholder="Password">
+
+  <button>Login</button>
+
+</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <h1 id="hero-title">Power Your Future With Solar Energy</h1>
+
+    <p id="hero-text">
+      Professional solar panel installation for homes and businesses.
+    </p>
+
+    <a href="#contact" class="btn" id="hero-btn">Contact us</a>
+    <a href="#projects" class="btn" id="hero-btn-2">Our Projects</a>
+
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="150">0</h2>
+    <p>Projects Completed</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="500">0</h2>
+    <p>Happy Clients</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="10">0</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>24/7</h2>
+    <p>Customer Support</p>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <div class="section-title">
+    <h2>Our Projects</h2>
+  </div>
+
+  <div class="projects">
+    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="">
+    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7" alt="">
+    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e" alt="">
+  </div>
+
+</section>
+
+<!-- COMMENT SECTION -->
+<section class="testimonials">
+    
+  <div class="testimonial-wrapper">
+    <h2 class="section-title">what they Say</h2>
+
+    <button class="nav-btn prev" onclick="changeSlide(-1)">❮</button>
+
+    <div class="testimonial-carousel" id="carousel"></div>
+
+    <button class="nav-btn next" onclick="changeSlide(1)">❯</button>
+
+  </div>
+  <!-- FORM -->
+  <div class="comment-form">
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Gmail">
+
+    <textarea id="message" placeholder="Your Comment"></textarea>
+
+    <input type="file" id="image" accept="image/*">
+
+    <!-- RATING -->
+    <div class="rating">
+      <span onclick="setRating(1)">★</span>
+      <span onclick="setRating(2)">★</span>
+      <span onclick="setRating(3)">★</span>
+      <span onclick="setRating(4)">★</span>
+      <span onclick="setRating(5)">★</span>
+    </div>
+
+    <button onclick="addComment()">Submit Comment</button>
+
+  </div>
+
+  <!-- AVERAGE RATING (optional but recommended) -->
+  <div class="rating-summary">
+    <h3>Average Rating</h3>
+    <div id="avgRating">0.0 ★</div>
+    <p id="totalReviews">0 Reviews</p>
+  </div>
+
+  <!-- CAROUSEL -->
+
+  <div class="admin-panel">
+
+  <input type="password" id="adminPass" placeholder="Admin Password">
+  <button onclick="loginAdmin()">Login</button>
+
+  <p id="adminStatus">Not logged in</p>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+
+  <h2>Ready To Switch Solar Energy?</h2>
+  <p>Contact us today for free consultation</p>
+  <a href="contact.html" class="btn">Contact Now</a>
+</section>
+
+<!-- FOOTER -->
+  <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-box">
+      <h2>SolarTech Energy</h2>
+
+      <p>
+        Professional solar energy solutions for homes and businesses.
+        Save electricity and protect the environment with renewable energy.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+
+      <ul>
+      <a href="index.html" id="nav-home">Home</a>
+ <a href="about.html" id="nav-about">About</a>
+  <a href="services.html" id="nav-services">Services</a>
+  <a href="projects.html" id="nav-projects">Projects</a>
+  <a href="contact.html" id="nav-contact">Contact</a>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-box">
+      <h3>Our Services</h3>
+
+      <ul>
+        <li>Solar Panel Installation</li>
+        <li>Commercial Solar</li>
+        <li>Battery Systems</li>
+        <li>Solar Maintenance</li>
+        <li>Energy Consultation</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+
+      <p>📍 Colombo, Sri Lanka</p>
+      <p>📞 +94 77 123 4567</p>
+      <p>✉ info@solartech.com</p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom">
+    <p>
+      © 2026 SolarTech Energy | All Rights Reserved
+    </p>
+  </div>
+
+</footer>
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>
